@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <h2>TO-DO</h2>
-    <div>
-        <input id="input" placeholder='enter task..' type="text"> 
-        <button id="add" onclick="add()" class="add-task">Add task</button>
-        <button id='remove' onclick="del()" class="delete-all">Delete All</button>
-    </div>
-   
-    <div id="show-task" class='show-task'></div>
-    <ul id="listTable" class='list'></ul>
+    <div class="container">
+        <h2>TO-DO</h2>
+    
+        <form class="todo-form">
+            <input  id="input" type="text" class="todo-input" placeholder="Add a Todo...">
+            <button id="add" type="submit" class="add-task">Add</button>
+          </form>
+          <ul id="listTable" class="todo-items">
+              <!-- li items will be added here from script -->
+          </ul>
+ </div>
+    
 </body>
 <script src="popup.js"></script>
 </html>

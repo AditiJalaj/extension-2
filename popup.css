@@ -2,15 +2,40 @@
     --rad:8px
 }
 
-.inline{
-    display: inline-block;
+/* * to select all elements */
+*{
+    padding:0;
+    margin:0;
 }
 
+.container{
+    background-color: #cde5be;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:4px;
+}
+ul{
+    list-style-type: none; 
+}
+button:hover {
+    cursor: pointer;
+    background-color: #ccdbc3;
+  }
+
+ .item {
+    padding: 8px;
+    font-size: 1.1rem;
+ }
 .add-task{
     background-color: rgb(13, 83, 83);
     color:azure;
     border: rgb(52, 128, 90) solid;
     border-radius: var(--rad);
+}
+.add-task:hover{
+    cursor: pointer;
+    background-color:rgb(77, 199, 136) ;
 }
 
 .delete-all{
@@ -23,11 +48,35 @@
 input{
     border-radius: var(--rad); 
 }
+
+.checkbox {
+    margin-right: 20px;
+  }
+
+  .delete-button {
+    float: right;
+    background-color: #dc143c;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 2px 5px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 550;
+  }
+
+.checked { 
+    text-decoration: line-through;
+}
+
 h2{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.list{
+
+.todo-items{
     background-color: rgb(158, 182, 226);
     border-radius: var(--rad); 
+    min-width:350px;
 }
+
