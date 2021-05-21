@@ -1,20 +1,23 @@
 let taskArray=[]
 
-// <div id="show-task" class='show-task'></div>
-//     <button class='remove'>Completed</button>
 
 function add(){
+
+    function createList(t){
+        return `<li> ${t} </li>`
+    }
+
     let task=document.getElementById("input").value
     taskArray.push(task)
     console.log(taskArray)
-    taskArray.map((i)=>{
-        createList(i)
+    const todo_arr=taskArray.map((i)=>{
+       return createList(i)
     })
+
+    document.querySelector('#listTable').innerHTML=todo_arr.join("")
 }
 
-function createList(t){
-    return `<li> ${t} </li>`
-}
 
-document.getElementById('add').addEventListener('click',add())
+
+document.getElementById("add").addEventListener('click',add())
 
