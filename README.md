@@ -9,8 +9,10 @@ Features--
 3. addToLocalStorage
 4. getFromLocalStorage
 5. checked items will be striked through
+
 6 .deleteTodo
 
-Demo Video - demo_record.webm
+Demo Video - demo_vid.webm
+https://youtu.be/t_4Vy9yMzmA 
 
 
