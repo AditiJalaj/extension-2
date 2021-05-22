@@ -10,3 +10,7 @@ Features--
 4. getFromLocalStorage
 5. checked items will be striked through
 6 .deleteTodo
+
+Demo Video - demo_record.webm
+
+
